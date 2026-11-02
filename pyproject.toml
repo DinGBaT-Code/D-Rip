@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "d-rip"
+version = "0.1.0"
+description = "A Linux-first DVD title scanner and ripping queue"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["coverage>=6"]
+
+[project.scripts]
+d-rip = "dvdrip.app:main"
+disc-ripper = "dvdrip.app:main"
+
+[tool.setuptools]
+packages = ["dvdrip"]
