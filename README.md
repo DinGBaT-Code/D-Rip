@@ -1,6 +1,6 @@
 # D-Rip
 
-Linux-first desktop DVD title scanner and ripping queue. The UI is built with Python's standard-library Tkinter so it runs without an extra Python package and can later be packaged for Windows.
+Linux-first desktop DVD title scanner and ripping queue. The UI is built with Python's standard-library Tkinter so it runs without an extra Python package
 
 ## Features
 
@@ -8,7 +8,7 @@ Linux-first desktop DVD title scanner and ripping queue. The UI is built with Py
 - Scan title durations, chapters, audio streams, and subtitle streams using `lsdvd` (which uses libdvdread; CSS access is provided by libdvdcss when installed).
 - Select multiple titles and queue MP4, MKV, or MPEG-TS outputs.
 - Choose H.264 or H.265/HEVC when the installed FFmpeg provides the encoder, set video/audio bitrates, crop any frame edge in pixels, scale to a selected output height, and optionally deinterlace.
-- Name output files with the disc volume label and title number, for example `CELTIC_WOMAN_PAL_SCN_title_02.mp4`.
+- Name output files with the disc volume label and title number, for example `DVD-X_title_02.mp4`.
 - Use VLC's DVD input and stream-output path to make an H.264/MPEG-2 audio staging stream, then use FFmpeg to package MP4/MKV and encode AAC audio for MP4.
 - Stop VLC at the scanned title duration, then trim the final file to that exact duration so a looping menu or next title is not included.
 - Show live rip and packaging percentages in the queue, with elapsed time and estimated time remaining.
